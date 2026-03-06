@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>かんたんメモアプリ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>📝 かんたんメモアプリ</h1>
+      <p class="subtitle">思いついたことをさっと保存できます。</p>
+
+      <form id="memo-form" class="memo-form">
+        <label for="memo-input">メモ内容</label>
+        <div class="input-row">
+          <input id="memo-input" type="text" placeholder="例: 牛乳を買う" maxlength="80" required />
+          <button type="submit">追加</button>
+        </div>
+      </form>
+
+      <section aria-live="polite">
+        <h2>メモ一覧</h2>
+        <ul id="memo-list" class="memo-list"></ul>
+        <p id="empty-message" class="empty-message">まだメモがありません。</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
